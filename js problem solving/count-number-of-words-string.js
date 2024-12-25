@@ -37,3 +37,21 @@ for( var i = 0; i < speech.length; i++){
 }
 number++;
 console.log(number);
+
+
+//practice 2:
+function reverseString(str){
+    var count = 0;
+    for ( var i = 0; i<str.length; i++){
+        var char = str[i];
+        if( char == " " && str[i -1] != " "){
+            count++;
+        }
+       
+    }
+    count++;
+    console.log(count);
+    
+    
+}
+ reverseString("i am  a puck boy")
