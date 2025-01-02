@@ -18,3 +18,4 @@ function vatKhaw(){
 callBack('pokom', 15, washHand);
 callBack('mokom', 22, gosolKoro);
 callBack('tokom', 19, vatKhaw);
+callBack('fokom', 13, vatKhaw);
