@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Listener JavaScript</title>
+</head>
+<body>
+    <button id="btn-1">Explore Me</button>
+    <button id="btn-2">Click-1</button>
+    <button id="btn-3">Click-2</button>
+    <button id="btn-4">Click-3</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quam ducimus enim iure porro dicta est odio velit exercitationem nobis ipsa accusantium mollitia voluptatum eveniet inventore, quas iste. Quis, nam?</p>
+
+
+
+
+    <script>
+
+        // even example -1 :
+               var exploreSomething = document.getElementById('btn-1');
+                exploreSomething.onclick = function(){
+                    document.write('Explore something');
+                };
+
+        // even example -2 :
+               
+               function bgChanger (){
+                document.body.style.backgroundColor = 'black';
+               }
+               const changeBackground = document.getElementById('btn-2');
+                   changeBackground.onclick = bgChanger;
+
+
+        // even example -3 :
+               
+                var changeBg = document.getElementById('btn-3');
+                changeBg.addEventListener('click', bgChanger);
+
+        // even example -4 :
+
+        document.getElementById('btn-4').addEventListener('click', function(){ document.body.style.color = 'red'});
+    </script>
+</body>
+</html>
